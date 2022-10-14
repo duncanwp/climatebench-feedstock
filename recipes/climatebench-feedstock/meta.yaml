@@ -1,0 +1,22 @@
+title: 'climatebench'
+description: 'NorESM2 outputs from CMIP6 converted to zarr stores from ESGF files in support of the ClimateBench 
+benchmark dataset'
+pangeo_forge_version: '0.8.3'
+pangeo_notebook_version: '2021.12.02'
+recipes:
+  dict_object: 'recipe:recipes'
+provenance:
+  providers:
+    - name: 'ESGF'
+      description: 'Earth System Grid Federation'
+      roles:
+        - producer
+        - licensor
+      url: https://esgf-node.llnl.gov/projects/cmip6/
+  license: 'CC-BY-4.0' #TODO...
+maintainers:
+  - name: 'Duncan Watson-Parris'
+    orcid: '0000-0002-5312-4950'
+    github: duncanwp
+bakery:
+  id: 'pangeo-ldeo-nsf-earthcube'
